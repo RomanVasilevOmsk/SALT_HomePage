@@ -1,0 +1,79 @@
+.doing
+  background-color #f8f8f8
+  color $purpleColorFont
+
+  &__wrapper
+    width 100%
+    max-width 1000px
+    margin 0 auto
+    display flex
+    flex-wrap wrap
+    flex-direction column
+    justify-content center
+    padding 7.5em 0 5em 0
+    @media (max-width: 830px)
+      padding 4em 0 2em 0
+    @media (max-width: 475px)
+      padding 3em 0 2em 0
+
+  &__title-wrapper
+    align-self flex-end
+    font-family 'Proxima Nova'
+    font-weight 500
+    display flex
+    max-width 940px
+
+  &__title
+    font-size 4em
+    letter-spacing -0.03em
+    margin 0.35em 0 0 0
+    @media (max-width: 475px)
+      font-size 2em
+
+  &__title-after
+    width 34px
+    height 34px
+    display block
+    border-top 12px solid $buttonOrangeBg
+    border-right 12px solid $buttonOrangeBg
+
+  &__content-list
+    display flex
+    flex-wrap wrap
+    flex-direction row
+    justify-content center
+    margin 3.8em auto 0 auto
+    max-width 950px
+
+  &__items
+    margin 0 0.6em 2.5em
+    display flex
+    flex-wrap wrap
+    flex-direction column
+    justify-content baseline
+    flex 1 1 calc(33.33% - 4em)
+
+  &__img
+    margin 0 auto
+    display block
+    &-wrapper
+      height 150px
+      display flex
+      flex-direction column
+      justify-content center
+      min-width 210px
+
+
+  &__title-item
+    font-family 'Proxima Nova'
+    font-weight 500
+    font-size 1.1em
+    text-transform uppercase
+    margin-top 1.6em
+    @media (max-width: 475px)
+      text-align center
+
+  &__desc
+    font-family 'Proxima Nova'
+    font-weight 400
+    color $grayColorFont
