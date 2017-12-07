@@ -1,0 +1,107 @@
+.swiper
+  &-container
+    width 100%
+    max-width 1510px
+    height 400px
+
+  &-slide
+    text-align center
+    font-size 18px
+    display -webkit-box
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+    -webkit-box-pack center
+    -ms-flex-pack center
+    -webkit-justify-content center
+    justify-content center
+    -webkit-box-align center
+    -ms-flex-align center
+    -webkit-align-items center
+    align-items center
+
+  &__content
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    width 100%
+    height 250px
+    max-width 1000px
+    &-2
+      flex-direction row-reverse
+    @media (max-width: 790px)
+        width 100%
+        height 330px
+        max-width 440px
+        flex-direction column
+    @media (max-width: 402px)
+        height 390px
+
+  &__desc-wrapper
+    width 70%
+    text-align left
+    font-family 'Proxima Nova'
+    height 150px
+    @media (max-width: 790px)
+      width 100%
+      text-align center
+
+  &__desc
+    margin 0.4em 0 0 0.4em
+    letter-spacing 0.006em
+    font-size 0.9em
+    line-height 1.9em
+    @media (max-width: 460px)
+      font-size 0.8em
+
+  &__title
+    font-weight 500
+    font-size 3em
+    letter-spacing 0.01em
+    margin-top 0.9em
+    @media (max-width: 790px)
+      font-size 2em
+    @media (max-width: 460px)
+      font-size 1.7em
+
+
+  &__button
+    margin 44px 0 0 6px
+    @media (max-width: 790px)
+      margin-top 10px
+
+  &__img-wrapper
+    width 30%
+    display flex
+    flex-direction column
+    justify-content flex-end
+    @media (max-width: 790px)
+      width 100%
+
+  &__img
+    margin 0 auto
+    max-width 150px
+    @media (max-width: 790px)
+      max-width 90px
+
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet
+  width 16px
+  height 18px
+  background-color #fff0
+  border-radius 0
+  margin 15px 0 15px 1px
+  opacity 1
+  background-image url("data:../images/base64/pagination-ico.png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA85pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InV1aWQ6QkQ4OUYyNDE0NTIyREYxMUFFM0NCNTkyQkU1NjFDRjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjkyMDUwQjJEQUExMTFFNzhCNjU5NzgyMEM4MjVERkIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjkyMDUwQjFEQUExMTFFNzhCNjU5NzgyMEM4MjVERkIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDplYWEzNjYyOS0yMTMxLTRkOWQtOWRlYS1iYjlmMzZiNWQ0MzIiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo5ZDZjZmQwOC1iMjdhLTExN2EtODcyYi1hYTE0OTI0MTc2ODYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4P21MgAAAA/klEQVR42mL6//8/Ax4sCcSe+NTgkmAH4mog/vwfAnYBsRaxBgQC8e3/CAAz5DcQTwViEVwG6ADxfiSNl4HYAYiFoRp/Q8XfAHEWELPADGBBU/AaWQES1oJ6BQauArEFSIIfKvAXiKcAsQCBgAV58S5UTzsTAwJ8BuIcIP7AgB+sB+LZMA4TA4Vg1ABUA/iBeB0Qq+BRzwLEWUBcAhcBxiUTEFchJdmfQNwKxDxo8e8GTTwwsBOI1dBz3lxoggKBZ0CcBFIExOuQNN6GJiacmckMiI//xwQgFxYDMRsx2ZkRiCOB+BHURXOhLsRQywg2BTfgAWJ5IL6KSwFAgAEA8rcglfH8UW8AAAAASUVORK5CYII=")
+  background-size contain
+
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet-active
+  width 19px
+  height 22px
+  margin 15px 0
+  background-image url("data:../images/base64/pagination-ico-active.png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA85pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InV1aWQ6QkQ4OUYyNDE0NTIyREYxMUFFM0NCNTkyQkU1NjFDRjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTJENkREMzVEQUEyMTFFNzg1QUNGN0JGRkIzRUIxMTYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTJENkREMzREQUEyMTFFNzg1QUNGN0JGRkIzRUIxMTYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDplYWEzNjYyOS0yMTMxLTRkOWQtOWRlYS1iYjlmMzZiNWQ0MzIiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo5ZDZjZmQwOC1iMjdhLTExN2EtODcyYi1hYTE0OTI0MTc2ODYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7zUjg6AAAA9ElEQVR42mL8382AD7AAcRoQFwDxBCCeBcR/cClmwmOQAxCfAeKpQKwKpS8CsSsphikC8Tog3g/E+mhyWkC8Cyqvgs8wHiBuAeKrQBzIgB8EQtW1Q/XBDWME4iggvgXE1UDMyUAcYAPiCqi+JJA5jMAIOA5kWDBQDk4wUckgELBgYqAiGDVs1DB6GXaCSmadBxlmDcTJQPycTEOeQ/WbgAz7B8TzgFgNiDuA+BeRhoDU9QKxJlT/P+Qw+wLElUCsDcTrCRi0FaquBIg/4ouAO0AcBC2er6HJgfieQOwDVUd0bO6BFtvZQHwPiIuh/B24NAAEGAD4cy4RRY2wagAAAABJRU5ErkJggg==")
+  background-size contain
+
+.swiper-container-vertical>.swiper-pagination-bullets
+  top 63%

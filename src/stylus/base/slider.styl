@@ -1,0 +1,78 @@
+.slider
+  position relative
+  max-width 800px
+  margin 60px auto 0 auto
+  width 50%
+  float right
+  @media (max-width:1054px)
+    float none
+    width 100%
+  @media (max-width:574px)
+    max-width 100%
+
+
+  &__inner
+    @media (max-width: 768px)
+      padding 0 30px
+
+  &__ico
+    &--right
+      transform rotate(90deg)translate(0px, -6px)
+      -webkit-transform rotate(90deg)translate(0px, -6px)
+      -moz-transform rotate(190deg)translate(0px, -6px)
+      -o-transform rotate(90deg)translate(0px, -6px)
+      -ms-transform rotate(90deg)translate(0px, -6px)
+    &--left
+      transform rotate(267deg)translate(0px, -6px)
+      -webkit-transform rotate(267deg)translate(0px, -6px)
+      -moz-transform rotate(267deg)translate(0px, -6px)
+      -o-transform rotate(267deg)translate(0px, -6px)
+      -ms-transform rotate(267deg)translate(0px, -6px)
+
+
+  &__btn
+    border 0
+    width 35px
+    height auto
+    position absolute
+    top 44%
+    z-index 1
+    opacity .8
+    background none
+    font-size 55px
+    color #519ed1
+    @media (max-width: 415px)
+      font-size 35px
+
+    &--prev
+      left: 45px
+      &:after
+        content ''
+      @media (max-width: 768px)
+        left 36px
+
+    &--next
+       right: 45px;
+
+       &:before
+        content ''
+      @media (max-width: 768px)
+        right  36px
+
+    &:focus
+      outline 0
+
+    &:hover
+      cursor pointer
+
+  &__item
+    & img
+      max-height 590px
+      margin 0 auto
+      border 10px solid #40230d
+      @media (max-width: 768px)
+        max-height 378px
+      @media (max-width: 414px)
+        max-height 300px
+    &:focus
+      outline none
