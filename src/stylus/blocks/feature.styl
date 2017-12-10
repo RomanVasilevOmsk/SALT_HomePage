@@ -7,10 +7,13 @@
     max-width 1330px
     margin 0 auto
     display flex
-    flex-wrap wrap
+    flex-wrap no-wrap
     justify-content space-between
     align-items center
-    padding 2em 0
+    padding 2em 0 6.7em 0
+    @media (max-width: 768px)
+      flex-wrap wrap
+      flex-direction column-reverse
 
 
   &__title
@@ -28,7 +31,7 @@
     letter-spacing -0.01em
     line-height 1.4em
     &-wrapper
-      height 200px
+      height 220px
       margin 1.6em 0 0 1.7em
 
   &__button
@@ -37,5 +40,63 @@
     &:hover
       color $buttonOrangeBg
 
-  &__img
-    padding-top 4.7em
+  &__video-wrapper
+    position relative
+    width 100%
+    max-width 760px
+
+  &__img-wrapper
+    width 100%
+    max-width 720px
+    margin-top 4.7em
+    height 100%
+    min-height 450px
+    background-image url(../images/video-cont.jpg)
+    background-size cover
+    @media (max-width: 768px)
+      margin 0 auto
+
+  &__play
+    background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAMAAABiiJHFAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURQAAAP///////////////////////////////////////88h6/kAAAAKdFJOUwC3mkFiECTv2n5nwYRBAAACzklEQVRYw61Z23YDIQhcwAv6/x9cNWmylyig+tDmpLtTnAEEPA5xeXIIzDFGZgB05I/V5R1yfixG51cwoYLEaiEF730IVC2P9VuYRCZskC48/xRcg0ayg8LYotdOwAYcyjsRg/AQFpMh6FHL9mNSUOdTAUbD/lGph0ctE+VBNlBGrDHYF1OTTd1UDPaiVtHsNhQF5QJnDnYXF14LUdxOl7oYRqizgd7HLVuB+QQCPR5gBbX7OmZeSqSef/mvG5Cu9IeY3eO7/PzOulzO4cEMHssL7/SmRWI/9F4C38dMx4ZFOfqR9fNehhe9wh7YCxLu0OsBtc/YC1baxeyL3fT5RPtg6d9Gyjw8U4z/k99G4vjwshYZ6S0ajwWrBRcGi2h8+jWE1VUjHxZCyzsowxZgp3dd9/kpwuqLkpedArXHqVzWaddY9TkeWlildjH7r/uqYFXa1fCSFDvujYOsXVUrSZXcj46EpIBIoiP8gJW0qwRMwY61q7Bi+voNO9KuesEs7EC7NdiudquwncLdFdhJyUbsvjwhzcH2faEmcnOUyZ5bCTDmBE2cVbmkw+EweNb5eMjZ21KNlMN8zooqwRC150pBSmGGHPNNYIeomSEjXookgVxD/j5RW9Gd5kDXVgruvXs3ZsFwNl6s9GMWsm3U80WDoS/YhiGnYnlciYKtDeRvGMB6B3kX7PWZd8Hy2cJt5l69yl27v/nu9Nakw57O7N6NlnZqQ7dDjwYPN9BQKMDNk5oexH0WYF+/ZxK0OFZxHXlwSTbqDkZxYmz5QY19F53HHaE2HtwkrzgOk5lwk99ytuF8i1BQ7JHY0N42Q6Lq+GjD+WAxVTn2d6x9tJrA6r3VpxVHeGiPWTIUyTc2NHGp8zYl9i6ZCKNx1vKlIkG72kp0eTtQatdakKYTNDXkWisCYFkA77s+SIuHiS/Ql3tDLpBbztOCHci1RUGH+AcbviVh1u7ARwAAAABJRU5ErkJggg==")
+    background-size contain
+    position absolute
+    display block
+    width 86px
+    height 86px
+    left 2em
+    right 0
+    margin 0 auto
+    top 45%
+    @media (max-width: 768px)
+      left 0
+
+  &__video-title
+    color $whiteColorFont
+    font-family 'Raleway'
+    font-weight 600
+    text-transform uppercase
+    text-align center
+    left 2em
+    position absolute
+    right 0
+    top 64%
+    letter-spacing 0.04em
+    font-size 1.1em
+    @media (max-width: 768px)
+      left 0
+
+  &__video-desc
+    color $whiteColorFont
+    font-family 'Raleway'
+    font-weight 700
+    text-transform uppercase
+    text-align center
+    left 1.2em
+    position absolute
+    right 0
+    top 69%
+    letter-spacing .08em
+    font-size 2.1em
+    @media (max-width: 768px)
+      font-size 1.1em
+      left 0

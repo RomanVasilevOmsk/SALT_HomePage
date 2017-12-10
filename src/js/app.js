@@ -47,6 +47,24 @@ $(document).ready(function(){
     });
 
 
+    //Modal-video
+    $(".js-show-modal").on("click", function(e) {
+        e.preventDefault();
+        var currentModal = $(this).attr("href");
+        $(currentModal + ", #js-overlay").fadeIn(500);
+        $("body").addClass("open-modal");
+        $(".video__modal").css({"display" : "flex"});
+        $(".video__modal").html("<iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/3p4MZJsexEs?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0'  frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen></iframe>");
+    });
+
+    $("#js-overlay, .js-modal-close").on("click", function(e) {
+        e.preventDefault();
+        $(".js-modal, #js-overlay").fadeOut(100);
+        $("body").removeClass("open-modal");
+        $(".video__modal").html("");
+    });
+
+
 });
 
 
