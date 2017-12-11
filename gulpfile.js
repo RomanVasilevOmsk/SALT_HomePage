@@ -146,9 +146,7 @@ gulp.task('build', [
     'scripts',
     'scripts:vendor',
     'fonts',
-    // 'scripts:vendorMap',
-    // 'scripts:vendorLightgallery',
-    // 'scripts:vendorSlick',
+    'autoprefixertask2',
     'mmq'
 ]);
 
